@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <table border="1" width="900" height="400" cellspacing="5">
+      <caption style="font-size:50px">Classification Results</caption>
+      <tr style="font-size:30px" align="center" bgcolor="white">
+          <td width="250"></td>
+          <th width="325">Rectangle box</th>
+          <th width="325">Cylinder box</th>
+      </tr>
+ 
+      {% for i in data_list %}
+      <tr style="font-size:20px" align="center" bgcolor="white">
+        <td>{{ i[1] }}</td>
+        <td>{{ i[2] }}</td>
+        <td>{{ i[3] }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+
+    <div style=text-align:right;>
+      <h2><a href="Main">돌아가기</a></h2>
+    </div>
+  </body>
+</html>
