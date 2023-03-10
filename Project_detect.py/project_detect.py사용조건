@@ -1,0 +1,20 @@
+준비물 : PC 1대, 라즈베리파이 1대, 라즈베리파이 카메라 1개,
+		STK500 1개, 커스텀 아두이노 or 아두이노 1개
+
+1, pytorch 다운로드
+2, yolov5 다운로드
+3, pymysql 다운로드
+	- database = blog
+	- table = project로 생성
+		create table project(
+		id int(11) NOT NULL AUTO_INCREMENT,
+		name varchar(40) NOT NULL,
+		number int(11) NOT NULL,
+		number1 int(11) NOT NULL,
+		PRIMARY KEY(id));
+		
+4, Raspi Searial 연결 상태여야 함
+	port = '/dev/ttyAMA0'   # Raspi Searial port
+	baudrate = 9600         # 보드 레이트 (통신 속도)
+
+5, STK500을 사용하여 Atmega328P와 연결하여 Atmel studio사용
